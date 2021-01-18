@@ -32,7 +32,7 @@ console.log(person.name);
 
 // Arrays Types
 
-const person = {
+const person1 = {
   name: "Sebastian",
   age: 23,
   hobbies: ["Sports", "Cooking"]
@@ -50,7 +50,7 @@ for (const hobby of person.hobbies) {
 
 // Tuples
 
-const person: {
+const person2: {
   name: string;
   age: number;
   hobbies: string[];
@@ -60,4 +60,19 @@ const person: {
   age: 23,
   hobbies: ["Sports", "Cooking"],
   role: [2, "author"] //Tuple
+};
+
+// Enums
+
+// const ADMIN = 0;
+// const READ_ONLY = 1;
+// const AUTHOR = 2;
+
+enum Role { ADMIN, READ_ONLY, AUTHOR };
+
+const person3: {
+  name: "Sebastian",
+  age: 23,
+  hobbies: ["Sports", "Cooking"],
+  role: Role.ADMIN
 };
