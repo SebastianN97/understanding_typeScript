@@ -17,7 +17,7 @@ const resultPhrase = "Result is: "
 add(number1, number2, printResult, resultPhrase); 
 
 
-// Types
+// Object Types
 
 const person: {
   name: string;
@@ -27,4 +27,22 @@ const person: {
   age: 23
 };
 
-console.log(person.name)
+console.log(person.name);
+
+
+// Arrays Types
+
+const person = {
+  name: "Sebastian",
+  age: 23,
+  hobbies: ["Sports", "Cooking"]
+};
+
+let favoriteActivities: any[];
+favoriteActivities = ["Sports", 1];
+
+console.log(person.name);
+
+for (const hobby of person.hobbies) {
+  console.log(hobby);
+}
