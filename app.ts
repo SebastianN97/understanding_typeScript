@@ -15,3 +15,16 @@ const printResult = true;
 const resultPhrase = "Result is: "
 
 add(number1, number2, printResult, resultPhrase); 
+
+
+// Types
+
+const person: {
+  name: string;
+  age: number;
+} = {
+  name: "Sebastian",
+  age: 23
+};
+
+console.log(person.name)
