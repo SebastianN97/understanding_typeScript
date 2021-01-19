@@ -89,3 +89,22 @@ function combine(input1: number | string, input2: number | string) {
   }
   return result;
 }
+
+// Aliases
+
+type Combinable = number | string;
+type ConversionDescriptor = "as-number" | "as-text";
+
+
+// Return types void
+
+function add(n1: number n2: number) {
+  return n1 + n2;
+}
+
+function printResult(num: number): void {
+  console.log("Result: " + num);
+}
+
+printResult(add(5, 12));
+
